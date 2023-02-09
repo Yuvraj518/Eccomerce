@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<?import javafx.scene.control.Label?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eccom.HeaderController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1f571" height="50.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Button layoutX="205.0" layoutY="13.0" mnemonicParsing="false" text="Search" onMouseClicked="#search"/>
+      <Button fx:id="loginbutton" layoutX="406.0" layoutY="13.0" mnemonicParsing="false" onMouseClicked="#login" text="Login" />
+      <Label fx:id="email" layoutX="406" layoutY="13" onMouseClicked="#logoutappear"></Label>
+      <TextField fx:id="searchtext" layoutX="34.0" layoutY="13.0" promptText="Search" />
+      <Button fx:id="logoutbutton" opacity="0" layoutX="406.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#logout" text="Logout" />
+   </children>
+</AnchorPane>

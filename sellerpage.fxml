@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eccom.SellerPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f59d2b" height="500.0" stroke="BLACK" strokeType="INSIDE" width="500.0" />
+      <Label layoutX="60.0" layoutY="39.0" prefHeight="38.0" prefWidth="165.0" text="Seller page">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="111.0" text="Product Name" />
+      <Label layoutX="60.0" layoutY="192.0" text="Product Price" />
+      <Label layoutX="60.0" layoutY="262.0" text="SellerID" />
+      <TextField fx:id="name" layoutX="57.0" layoutY="137.0" promptText="Enter product name" />
+      <TextField fx:id="price" layoutX="57.0" layoutY="217.0" promptText="Enter product price" />
+      <TextField fx:id="sellerid" layoutX="57.0" layoutY="292.0" promptText="Enter seller ID" />
+      <Button layoutX="291.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#AddProduct" text="Add Product" />
+      <Button layoutX="406.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#logout" text="Logout" />
+      <Label layoutX="60.0" layoutY="404.0" text="ProductID" />
+      <TextField fx:id="productid" layoutX="57.0" layoutY="433.0" promptText="Enter ProductID" />
+      <Button layoutX="276.0" layoutY="433.0" mnemonicParsing="false" text="De-List Product" onMouseClicked="#Delist"/>
+   </children>
+</AnchorPane>
